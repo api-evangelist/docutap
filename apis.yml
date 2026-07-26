@@ -1,8 +1,23 @@
 aid: docutap
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/docutap.png
 name: DocuTAP
-description: 'DocuTAP is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'DocuTAP was an urgent care EHR and practice-management software company based in Sioux Falls,
+  South Dakota, backed by Bessemer Venture Partners. In 2019 DocuTAP merged with Practice Velocity to form
+  Experity, the on-demand and urgent-care healthcare technology vendor. The DocuTAP EMR/PM product continues
+  under the Experity portfolio, with customer sign-in at dtlogin.experityhealth.com; the legacy docutap.com
+  domain is no longer actively maintained (its TLS certificate has expired). No public developer portal or
+  API is currently published for DocuTAP.'
 url: https://raw.githubusercontent.com/api-evangelist/docutap/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- EHR
+- Urgent Care
+- Practice Management
+- Health IT
+- Experity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/docutap-domain-security.yml
 - type: Website
   url: https://www.docutap.com/
+- type: Login
+  url: https://dtlogin.experityhealth.com
+- type: Support
+  url: https://www.experityhealth.com/support/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
